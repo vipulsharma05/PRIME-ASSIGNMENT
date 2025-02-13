@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div{
+            border: red solid 2px;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            padding: 20px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form action="">
+        <label for="myname">Name: </label>
+        <input
+          type="text"
+          name="myname"
+          id="myname"
+          placeholder="Input Your name"
+        />
+        <br />
+        <br />
+        <label for="mymail">Email: </label>
+        <input
+          type="email"
+          name="mail"
+          id="mymail"
+          placeholder="Enter Your mail"
+        />
+        <br />
+        <br />
+        <label for="mypass">Password: </label>
+        <input
+          type="password"
+          name="pass"
+          id="mypass"
+          placeholder="Enter Your Password"
+        />
+        <br />
+        <br />
+        <label for="gen">Gender: </label>
+        <input type="radio" name="g" id="gen" /> Male
+        <input type="radio" name="g" id="gen" /> Female
+        <br />
+        <br />
+        <label for="myh">Hobbies:</label><br />
+        <input type="checkbox" name="ho" id="myh" />Reading <br />
+        <input type="checkbox" name="ho" id="myh" />Travelling <br />
+        <input type="checkbox" name="ho" id="myh" />Cooking <br />
+        <input type="checkbox" name="ho" id="myh" />Sports <br />
+        <br />
+
+        <label for="mycity">City:</label>
+        <select name="city" id="mycity">
+          <option value="">Select Your City</option>
+          <option value="">Greater Noida</option>
+          <option value="">Ghaziabad</option>
+          <option value="">Noida</option>
+        </select>
+
+        <br />
+        <br />
+        <label for="Dob">Date OF Birth: </label>
+        <input type="date" name="date" id="Dob" />
+        <br />
+        <br />
+        <label for="Phn">Phone Number: </label>
+        <input type="tel" id="Phn" pattern="[0-9]{10}" title="Warning 10 number k phone number daal" placeholder="10-Digit number" />
+        <br />
+        <br />
+        <label for="address">Address:</label>
+        <br />
+        <br />
+        <textarea name="area" id="address" cols="50" rows="6"></textarea>
+        <br>
+        <button type="submit"><a href="/submit.html" style="text-decoration: none; color: black;">Submit</a></button>
+      </form>
+    </div>
+  </body>
+</html>
